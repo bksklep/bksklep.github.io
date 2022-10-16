@@ -255,6 +255,7 @@ h2{padding:20px;}
     float:right;
     padding: 5px;
 }
+.edit:hover{color:red;}
 .cukier{
     background: #e6e6e6;
     width:250px;
