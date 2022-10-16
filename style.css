@@ -193,6 +193,7 @@ nav button:hover{
 }
 .ogloszenie .price{
     font-size:32px;
+    color:black;
 }
 a{
     text-decoration: none;
@@ -219,4 +220,43 @@ h2{padding:20px;}
 }
 .xd:hover{
     background: #888888;
+}
+.aukcja figure{
+    width: 250px;
+    height: 250px;
+    background: #FFF;
+    margin: 20px 0;
+}
+.aukcja img{
+    max-width:300px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+
+}
+.aukcja{
+    border-bottom:1px solid #000;
+    width:100%;
+    background: #FFF;
+    text-align: center;
+    height: 500px;
+}
+.aukcja .title{
+    color: #222;
+    font-size:24px;
+}
+.aukcja .price{
+    font-size:32px;
+}
+.edit{
+    font-size:32px;
+    background: none;
+    border:none;
+    float:right;
+    padding: 5px;
+}
+.cukier{
+    background: #e6e6e6;
+    width:250px;
+    margin:0 auto;
 }
