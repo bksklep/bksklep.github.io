@@ -1,0 +1,222 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+
+}
+body{
+    background:#888;
+    padding-top: 30px;
+}
+main{
+    position:relative;
+    width:350px;
+    height:650px;
+    border-style: inset;
+    border-width:40px 15px 30px 15px;
+    border-color:black;
+    border-radius:10px;
+    margin:0 auto;
+    background:#666;
+}
+section {
+    margin: 0 auto;
+    text-align: center;
+
+}
+
+#firstPage button{
+    background: #F00;
+    padding: 10px;
+    width: 80%;
+    color: #FFF;
+    margin:10px 0;
+    border:none;
+    border-radius: 30px;
+    font-size: 1.5rem;
+}
+
+#firstPage button:hover{
+    background: #df0000;
+}
+.form{
+    width:90%;
+    margin: 0 auto;
+}
+
+.form input, .form select,.form textarea {
+    outline: none;
+    border: none;
+    margin-bottom: 10px;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #000000;
+    display: block;
+    width: 100%;
+    background: #ffffff;
+    height: 50px;
+    border-radius: 25px;
+    padding: 0 30px 0 80px;
+}
+.form textarea {
+    height: 80px;
+    resize: none;
+}
+.form input:focus+span,.form select:focus+span{
+    color: #ff0000;
+    padding-left: 30px;
+}
+
+.validate-input span {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    padding-left: 35px;
+    pointer-events: none;
+    color: #000000;
+    transition: all .4s
+}
+.validate-input {
+    position: relative;
+}
+.form button{
+    background: #F00;
+    padding: 10px;
+    width: 100%;
+    color: #FFF;
+    margin:10px 0;
+    border:none;
+    border-radius: 30px;
+    font-size: 1em;
+}
+
+nav{
+    z-index: 9999;
+    position: absolute;
+    width:100%;
+    height: 50px;
+    background: #fff;
+    border-top:1px solid #000;
+    bottom:0;
+    text-align: center;
+
+}
+nav button{
+    border:none;
+    background:none;
+    font-size: 32px;
+    color: #333;
+    padding:0 10px;
+}
+nav button.selected{
+    color:red;
+}
+nav button:hover{
+    color: #ff6d6d;
+}
+.searchBar{
+    background:white;
+    height: 40px;
+    padding:5px;
+    border-bottom: 2px solid black;
+}
+.searchBar input{
+    outline: none;
+    border: none;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #000000;
+    width: 70%;
+    background: #ccc;
+    height: 30px;
+    border-radius: 25px;
+    padding: 0 30px 0 80px
+}
+.searchBar input:focus+.searchBar span{
+    color: #ff0000;
+    padding-left: 30px;
+}
+.searchBar button{
+    border:none;
+    background:none;
+    font-size: 20px;
+    color: #333;
+    padding:0 10px;
+}
+
+.konto{
+    width:100%;
+    padding:20px;
+}
+.konto a{
+    padding:0 10px;
+    text-decoration: none;
+    color: #000;
+
+}
+.konto p{
+    border:1px solid black;
+    padding:10px;
+    background: white;
+    border-radius: 30px;
+}
+.konto p:hover{
+    background: #ccc;
+}
+.ogloszenie figure{
+    width: 128px;
+    height: 128px;
+    background: #FFF;
+    margin:5px;
+    float:left;
+}
+.ogloszenie img{
+    max-width:128px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+
+}
+.ogloszenie{
+    border-bottom:1px solid #000;
+    float:left;
+    width:100%;
+    background: #FFF;
+}
+.ogloszenie .title{
+    color: #222;
+    padding: 10px;
+}
+.ogloszenie .price{
+    font-size:32px;
+}
+a{
+    text-decoration: none;
+}
+h2{padding:20px;}
+.koszyk{
+    margin:20px;
+}
+.image-upload>input {
+    display: none;
+}
+.filter{
+    background: #ddd;
+    height:320px;
+    text-align: center;
+}
+.xd {
+    background: #FFF;
+    color: #000;
+    width:50px;
+    height: 50px;
+    border-radius: 30px;
+    border: none;
+}
+.xd:hover{
+    background: #888888;
+}

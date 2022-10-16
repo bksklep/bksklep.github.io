@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <title>BKShop</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://kit.fontawesome.com/647a9c32de.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<main>
+
+    <div class="filter">
+        <h2>Filtruj wyniki</h2>
+        <div class="form">
+            <div class="validate-input" >
+                <select>
+                    <option value="" disabled selected>Kategoria</option>
+                    <option>Sport</option>
+                    <option>Motoryzacja</option>
+                    <option>Moda</option>
+                    <option>Elektronika</option>
+                    <option>Inne</option>
+                </select>
+                <span><i class="fa-solid fa-list"></i></span>
+            </div>
+            <div class="validate-input" >
+                <input class="cena" type="text" placeholder="Cena od:">
+                <span><i class="fa-solid fa-dollar-sign"></i></span>
+            </div>
+            <div class="validate-input" >
+                <input class="cena" type="text" placeholder="Cena do">
+                <span><i class="fa-solid fa-dollar-sign"></i></span>
+            </div>
+
+        </div>
+        <button class="xd" onclick="changeIcon()">
+            <i class="fa-solid fa-dollar-sign"></i>
+            <i id="szczalka" class="fa-solid fa-up-long"></i>
+        </button>
+    </div>
+
+
+    <nav>
+        <a href="home.html"><button class="selected"><i class="fa-solid fa-house"></i></button></a>
+        <a href="cart.html"><button><i class="fa-solid fa-basket-shopping"></i></button></a>
+        <a href="newP.html"><button><i class="fa-solid fa-circle-plus"></i></button></a>
+        <a href="fav.html"><button><i class="fa-solid fa-star"></i></button></a>
+        <a href="konto.html"><button><i class="fa-solid fa-user"></i></button></a>
+    </nav>
+</main>
+<script>
+    function changeIcon(){
+        let xd = document.getElementById("szczalka");
+        xd.setAttribute('class', xd.getAttribute('class') === 'fa-solid fa-up-long'?'fa-solid fa-down-long':'fa-solid fa-up-long');
+    }
+</script>
+</body>
+</html>
