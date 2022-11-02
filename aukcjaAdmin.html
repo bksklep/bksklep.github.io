@@ -7,20 +7,20 @@
     <script src="https://kit.fontawesome.com/647a9c32de.js" crossorigin="anonymous"></script>
 </head>
 <body>
-<main>
+<main class="auction">
     <div class="searchBar">
-        <a href="filter.html"><button ><i class="fa-solid fa-filter"></i></button></a>
-        <input type="text" placeholder="Szukaj...">
-        <button><i class="fa fa-search"></i></button>
+        <a onclick="history.back()"><button ><i class="fa-solid fa-chevron-left"></i></button></a>
     </div>
     <div>
         <div class="aukcja">
-            <span class="title">Cukier polski 1 kg</span>
+            <div class="title"><span >Cukier polski 1 kg</span></div>
+
             <a href="editAukcji.html"><button class="edit"><i class="fa-solid fa-pen"></i></button></a>
             <br>
-            <figure><img src="img/cukier.png" alt="2"/></figure>
-            <br>
-            <span class="price">100,00 zł</span>
+            <img id='cukier' src="img/cukier.png" alt="2"/>
+            <span class="price">100,00 zł</span><br>
+            <div class="location"><div class="kolko"><i class="fa-sharp fa-solid fa-location-dot"></i></div><div class="miejsce">Kielce, Świętokrzyskie</div></div>
+<hr>
             <p>Cukier 1kg z polskich buraków. Do herbaty, kawy i sernika (ale tylko bez rodzynek)</p>
         </div>
     </div>

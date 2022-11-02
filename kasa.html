@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <title>BKShop</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://kit.fontawesome.com/647a9c32de.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<main>
+    <div class="koszykBar">
+        <a onclick="history.back()"><button ><i class="fa-solid fa-chevron-left"></i></button></a>
+        <span class="tabName">Dostawa i płatność</span><br>
+        <div class="znaczniki">
+            <div class="znacznik active"> </div>
+            <div class="znacznik active"></div>
+            <div class="znacznik"></div>
+
+        </div>
+    </div>
+    <div>
+        <div class="kupujacy">
+
+            <span>Dane kupującego:</span><br/>
+            <span>Janusz Kowalski</span><br/>
+            <span>ul. Krótka 12</span><br/>
+            <span>20-077 Lublin</span><br/>
+            <div class="usun">Zmień dane <i class="fa-solid fa-edit"></i></div>
+        </div>
+        <div class="platnosc">
+            <div class="rodzajP "><i class="fa-brands fa-google-pay"></i>GooglePay</div>
+            <div class="rodzajP"><i class="fa-brands fa-apple-pay"></i><br> ApplePay</div>
+            <div class="rodzajP active"><i class="fa-brands fa-paypal"></i><br> PayPal</div>
+            <div class="rodzajP"><i class="fa-solid fa-credit-card"></i><br> Przelew</div>
+        </div>
+        <div class="dostawa">
+            <div class="rodzajD active"><i class="fa-solid fa-envelope"></i><br> Paczkomat</div>
+            <div class="rodzajD"><i class="fa-solid fa-truck"></i><br> Kurier</div>
+        </div>
+
+    </div>
+
+
+
+    <a href="gotowe.html"><button class="kasa">PODSUMOWANIE</button></a>
+
+    <nav>
+        <a href="home.html"><button><i class="fa-solid fa-house"></i></button></a>
+        <a href="cart.html"><button  class="selected"><i class="fa-solid fa-basket-shopping"></i></button></a>
+        <a href="newP.html"><button><i class="fa-solid fa-circle-plus"></i></button></a>
+        <a href="fav.html"><button><i class="fa-solid fa-star"></i></button></a>
+        <a href="konto.html"><button><i class="fa-solid fa-user"></i></button></a>
+    </nav>
+</main>
+
+</body>
+</html>
