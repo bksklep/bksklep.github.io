@@ -1,8 +1,4 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title><!DOCTYPE html>
         <html lang="pl">
         <head>
         <title>BKShop</title>
@@ -12,12 +8,16 @@
 </head>
 <body>
 <main>
-    <section>
-        <h2>Edytuj aukcję</h2>
+    <div class="editAuction">
+        <div class="koszykBar">
+            <a onclick="history.back()"><button ><i class="fa-solid fa-chevron-left"></i></button></a>
+            <span class="tabName">Edytuj aukcję</span><br>
+
+        </div>
         <div class="image-upload">
             <label for="file-input">
                 <div class="cukier">
-                <img src="img/cukier.png" height="150px"/>
+                <img src="img/cukier.png" height="150px" style="margin: 0 50px;"/>
                 </div>
             </label>
 
@@ -56,7 +56,21 @@
             </div>
 
         </form>
-    </section>
+        <a href="home.html"><button class="button">ZAPISZ</button></a>
+        <a><button id="myBtn"  class="button disabled">USUŃ AUKCJĘ</button></a>
+        <div id="myModal" class="modal">
+
+
+            <div class="modal-content">
+                <span class="exit close">&times;</span><br>
+                <span>Czy na pewno chcesz usunąć aukcję?</span>
+                <br>
+                <a  href="podmianka.html"><button>TAK</button></a>
+                <a><button class=" exit" >NIE</button></a>
+            </div>
+
+        </div>
+    </div>
     <nav>
         <a href="home.html"><button><i class="fa-solid fa-house"></i></button></a>
         <a href="cart.html"><button><i class="fa-solid fa-basket-shopping"></i></button></a>
@@ -65,11 +79,29 @@
         <a href="konto.html"><button><i class="fa-solid fa-user"></i></button></a>
     </nav>
 </main>
+<script>
+    var modal = document.getElementById("myModal");
+    var btn = document.getElementById("myBtn");
 
-</body>
-</html></title>
-</head>
-<body>
+    var span = document.getElementsByClassName("exit")[0];
+    var span2 = document.getElementsByClassName("exit")[1];
 
+    btn.onclick = function() {
+        modal.style.display = "block";
+    }
+
+    span.onclick = function() {
+        modal.style.display = "none";
+    }
+    span2.onclick = function() {
+        modal.style.display = "none";
+    }
+
+    window.onclick = function(event) {
+        if (event.target === modal) {
+            modal.style.display = "none";
+        }
+    }
+</script>
 </body>
 </html>

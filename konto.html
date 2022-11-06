@@ -14,7 +14,6 @@
         <div class="konto">
             <a href="aukcje.html"><p>Moje aukcje</p></a>
             <a href="dane.html"><p>Dane osobowe</p></a>
-<!--            Jak nie będzie czegoś to ustaw. jak jest to zmień-->
             <a href="logowanie.html"><p>Zmień dane logowania</p></a>
             <a id="myBtn" ><p>Wyloguj</p></a></tr>
 
@@ -26,8 +25,9 @@
             <div class="modal-content">
                 <span class="exit close">&times;</span><br>
                 <span>Czy na pewno chcesz się wylogować?</span>
-                <a href="index.html"><button>TAK</button></a>
-                <a><button class=" exit" >NIE</button></a>
+                <br>
+                <a href="home.html"><button>TAK</button></a>
+                <a><button class="exit" >NIE</button></a>
             </div>
 
         </div>
@@ -44,22 +44,16 @@
 </main>
 
 <script>
-    // Get the modal
     var modal = document.getElementById("myModal");
-
-    // Get the button that opens the modal
     var btn = document.getElementById("myBtn");
 
-    // Get the <span> element that closes the modal
     var span = document.getElementsByClassName("exit")[0];
     var span2 = document.getElementsByClassName("exit")[1];
 
-    // When the user clicks the button, open the modal
     btn.onclick = function() {
         modal.style.display = "block";
     }
 
-    // When the user clicks on <span> (x), close the modal
     span.onclick = function() {
         modal.style.display = "none";
     }
@@ -67,7 +61,6 @@
         modal.style.display = "none";
     }
 
-    // When the user clicks anywhere outside of the modal, close it
     window.onclick = function(event) {
         if (event.target === modal) {
             modal.style.display = "none";

@@ -14,22 +14,105 @@
 
     </div>
     <div class="dane">
+        <div>
         <h6>NICK</h6>
-        <p>User</p>
-        <a href="#"><button>ZMIEŃ</button></a>
+        <p id="nick">User</p>
+        <button id="dane1" onclick="showModal(0)">ZMIEŃ</button>
         <h6>IMIĘ I NAZWISKO</h6>
-        <p>Jan Kowalski</p>
-        <a href="#"><button>ZMIEŃ</button></a>
+        <p id="imie">Jan Kowalski</p>
+        <button id="dane2" onclick="showModal(1)">ZMIEŃ</button>
         <h6>EMAIL</h6>
-        <p>example@mail.com</p>
-        <a href="#"><button>ZMIEŃ</button></a>
+        <p id="mail">example@mail.com</p>
+        <button id="dane3" onclick="showModal(2)">ZMIEŃ</button>
         <h6>TELEFON</h6>
-        <p>+48 722 672 712</p>
-        <a href="#"><button>ZMIEŃ</button></a>
+        <p id="tel">+48 722 672 712</p>
+        <button id="dane4" onclick="showModal(3)">ZMIEŃ</button>
         <h6>HASŁO</h6>
-        <p>********</p>
-        <a href="#"><button>ZMIEŃ</button></a>
+        <p id="haslo">********</p>
+        <button id="dane5" onclick="showModal(4)">ZMIEŃ</button>
+        </div>
+        <div id="mdane1" class="modal">
+            <div class="modal-content">
+                <span class="close exit">&times;</span>
+                <form>
+                    <div>
+                        <span><i class="fa fa-user"></i> Podaj nowy nick: </span>
+                        <input id='inick' type="text" placeholder="Nick">
+                    </div>
+                </form>
 
+                <br>
+                <button onclick="zmienNick()">ZAPISZ</button>
+                <button class=" exit" >ANULUJ</button>
+
+            </div>
+        </div>
+        <div id="mdane2" class="modal">
+            <div class="modal-content">
+                <span class="close exit">&times;</span>
+                <form>
+                    <div>
+                        <span><i class="fa fa-user"></i> Podaj imię i nazwisko: </span>
+                        <input id='iimie' type="text" placeholder="Imię i nazwisko">
+                    </div>
+                </form>
+
+                <br>
+                <button onclick="zmienImie()">ZAPISZ</button>
+                <button class=" exit" >ANULUJ</button>
+
+            </div>
+        </div>
+        <div id="mdane3" class="modal">
+            <div class="modal-content">
+                <span class="close exit">&times;</span>
+                <form>
+                    <div>
+                        <span><i class="fa fa-envelope"></i> Mail:</span>
+                        <input id='imail' type="text" placeholder="Email">
+                    </div>
+                </form>
+
+                <br>
+                <button onclick="zmienMail()">ZAPISZ</button>
+<button class=" exit" >ANULUJ</button>
+
+            </div>
+        </div>
+        <div id="mdane4" class="modal">
+            <div class="modal-content">
+                <span class="close exit">&times;</span>
+                <form>
+                    <div>
+                        <span><i class="fa fa-phone"></i> Podaj  telefon: </span>
+                        <input id='itel' type="text" placeholder="Telefon">
+                    </div>
+                </form>
+
+                <br>
+                <button onclick="zmienTel()">ZAPISZ</button>
+<button class=" exit" >ANULUJ</button>
+
+            </div>
+        </div>
+        <div id="mdane5" class="modal">
+            <div class="modal-content">
+                <span class="close exit">&times;</span>
+                <form>
+                    <div>
+                        <span><i class="fa fa-lock"></i> Hasło:</span>
+                        <input id='ihaslo' type="password" placeholder="Hasło">
+                        <span><i class="fa fa-lock"></i> Potwierdź hasło:</span>
+                        <input type="password" placeholder="Potwierdź hasło">
+                    </div>
+                </form>
+
+                <br>
+                <button onclick="zmienHaslo()">ZAPISZ</button>
+                <a><button class=" exit" >ANULUJ</button></a>
+
+            </div>
+        </div>
 
     </div>
 
@@ -41,6 +124,72 @@
         <a href="konto.html"><button><i class="fa-solid fa-user"></i></button></a>
     </nav>
 </main>
+<script>
+    let btns = ["dane1","dane2","dane3","dane4","dane5"];
+    let modals = ["mdane1","mdane2","mdane3","mdane4","mdane5"];
 
+    function showModal(modalID) {
+        let x = document.getElementsByClassName('exit')[0];
+        let x2 = document.getElementsByClassName('exit')[1];
+        let btn = document.getElementById(btns[modalID]);
+        let modal = document.getElementById(modals[modalID]);
+
+
+        btn.onclick = function () {
+            modal.style.display = "block";
+        }
+
+        x.onclick = function () {
+            modal.style.display = "none";
+        }
+        x2.onclick = function () {
+            modal.style.display = "none";
+        }
+
+
+        window.onclick = function (event) {
+            if (event.target === modal) {
+                modal.style.display = "none";
+            }
+        }
+    }
+    function zmienNick(){
+
+        let inick = document.getElementById("inick").value;
+        let nick = document.getElementById("nick");
+        nick.innerHTML=inick;
+        let modal = document.getElementById(modals[0]);
+        modal.style.display = "none";
+    }
+    function zmienImie(){
+        let iimie = document.getElementById("iimie").value;
+        let imie = document.getElementById("imie");
+        imie.innerHTML=iimie;
+        let modal = document.getElementById(modals[1]);
+        modal.style.display = "none";
+    }
+    function zmienMail(){
+        let imail = document.getElementById("imail").value;
+        let mail = document.getElementById("mail");
+        mail.innerHTML=imail;
+        let modal = document.getElementById(modals[2]);
+        modal.style.display = "none";
+    }
+    function zmienTel(){
+        let itel = document.getElementById("itel").value;
+        let tel = document.getElementById("tel");
+        tel.innerHTML=itel;
+        let modal = document.getElementById(modals[3]);
+        modal.style.display = "none";
+    }
+    function zmienHaslo(){
+        let ihaslo = document.getElementById("ihaslo").value;
+        let haslo = document.getElementById("haslo");
+        haslo.innerHTML=ihaslo;
+        let modal = document.getElementById(modals[4]);
+        modal.style.display = "none";
+    }
+
+</script>
 </body>
 </html>
