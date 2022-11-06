@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <title>BKShop</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://kit.fontawesome.com/647a9c32de.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<main>
+    <div class="koszykBar">
+        <a onclick="history.back()"><button ><i class="fa-solid fa-chevron-left"></i></button></a>
+        <span class="tabName">Dane konta</span><br>
+
+    </div>
+    <div class="adres">
+        <h2>Zmiana adresu</h2><br/>
+        <form>
+            <div>
+                <span><i class="fa-solid fa-house-user"></i> Ulica i numer</span>
+                <input type="text" value="Krótka 12">
+
+            </div>
+            <div>
+                <span><i class="fa fa-envelope"></i> Kod pocztowy</span>
+                <input type="text" value="20-077">
+
+            </div>
+            <div>
+                <span><i class="fa-solid fa-city"></i> Miasto</span>
+                <input type="text" value="Lublin">
+
+            </div>
+            <div>
+                <span><i class="fa-solid fa-list"></i></span>
+                <select>
+
+                    <option hidden>województwo</option>
+                    <option value="dolnośląskie">dolnośląskie</option>
+                    <option value="kujawsko-pomorskie">kujawsko-pomorskie</option>
+                    <option value="lubelskie">lubelskie</option>
+                    <option selected value="lubuskie">lubuskie</option>
+                    <option value="łódzkie">łódzkie</option>
+                    <option value="małopolskie">małopolskie</option>
+                    <option value="mazowieckie">mazowieckie</option>
+                    <option value="opolskie">opolskie</option>
+                    <option value="podkarpackie">podkarpackie</option>
+                    <option value="podlaskie">podlaskie</option>
+                    <option value="pomorskie">pomorskie</option>
+                    <option value="śląskie">śląskie</option>
+                    <option value="świętokrzyskie">świętokrzyskie</option>
+                    <option value="warmińsko-mazurskie">warmińsko-mazurskie</option>
+                    <option value="wielkopolskie">wielkopolskie</option>
+                    <option value="zachodniopomorskie">zachodniopomorskie</option>
+                </select>
+
+            </div>
+
+
+        </form>
+        <a href="konto.html"><button>ZAPISZ</button></a>
+        <a href="dane.html"><button class="disabled">ANULUJ</button></a>
+
+    </div>
+</main>
+
+</body>
+</html>

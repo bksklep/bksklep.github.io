@@ -24,17 +24,20 @@
             <input id="file-input" type="file" />
         </div>
         <br>
-        <div class="form">
+        <form>
 
-            <div class="validate-input">
+            <div >
+                <span><i class="fa-solid fa-tag"></i> Nazwa: </span>
                 <input type="text" placeholder="Nazwa" value="Cukier polski 1 kg">
-                <span><i class="fa-solid fa-tag"></i></span>
+
             </div>
-            <div class="validate-input" >
+            <div>
+                <span><i class="fa-solid fa-dollar-sign"></i> Cena:</span>
                 <input type="text" placeholder="Cena" value="100,00">
-                <span><i class="fa-solid fa-dollar-sign"></i></span>
+
             </div>
-            <div class="validate-input" >
+            <div>
+                <span><i class="fa-solid fa-list"></i> Kategoria: </span>
                 <select>
                     <option disabled>Kategoria</option>
                     <option>Sport</option>
@@ -44,19 +47,20 @@
                     <option selected>Drożyzna</option>
                     <option>Inne</option>
                 </select>
-                <span><i class="fa-solid fa-list"></i></span>
+
             </div>
-            <div class="validate-input" >
-                <textarea id="w3review" name="w3review" rows="45" cols="50" placeholder="Opis">Cukier 1kg z polskich buraków. Do herbaty, kawy i sernika (ale tylko bez rodzynek)</textarea>
-                <span><i class="fa-solid fa-pen"></i></span>
+            <div>
+                <span><i class="fa-solid fa-pen"></i> Opis:</span>
+                <textarea rows="5" cols="40" placeholder="Opis">Cukier 1kg z polskich buraków. Do herbaty, kawy i sernika (ale tylko bez rodzynek)</textarea>
+
             </div>
 
-        </div>
+        </form>
     </section>
     <nav>
         <a href="home.html"><button><i class="fa-solid fa-house"></i></button></a>
         <a href="cart.html"><button><i class="fa-solid fa-basket-shopping"></i></button></a>
-        <a href="newP.html"><button class="selected"><i class="fa-solid fa-circle-plus"></i></button></a>
+        <a href="newP.html"><button><i class="fa-solid fa-circle-plus"></i></button></a>
         <a href="fav.html"><button><i class="fa-solid fa-star"></i></button></a>
         <a href="konto.html"><button><i class="fa-solid fa-user"></i></button></a>
     </nav>
